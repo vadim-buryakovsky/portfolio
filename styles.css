@@ -1,0 +1,106 @@
+html,body { height:100vh;
+    padding: 0px;
+    margin: 0px;
+}
+
+header {
+    width: 100%;
+    height: 100px;
+    background-color: rgb(117, 117, 163) ;
+    position: relative;
+ 
+  }
+  
+  h1 {
+    
+    width: fit-content;
+    
+  }
+  .name {
+    box-sizing: border-box;
+    margin: 0 auto;
+    width: fit-content;
+    height: 100px;
+    background-color: #cccccc;
+    padding: 10px;
+    position: absolute;
+    top: 50px;
+    left: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    box-shadow:  0 4px 8px 0 grey;
+    text-shadow: 2px 2px 5px grey;
+  }
+
+
+  .links {
+      list-style: none;
+      box-sizing: border-box;
+      right: 20px;
+      bottom: -35px;
+      width: fit-content;
+      height: 50px;
+   /*    background-color: cadetblue; */
+      position: absolute;
+      padding-top: 15px;
+      padding-left: 5px;
+      padding-right: 5px;
+  }
+
+  li {
+      display: inline;
+  }
+
+  button {
+      border-radius: 10px;
+      background-color: #cccccc;
+      border: 1px solid grey;
+      cursor: pointer;
+  }
+
+  .left {
+      background-color:rgb(194, 194, 214);
+      width: 20%;
+      box-sizing: border-box;
+      bottom: 0px;
+      top: 100px;
+      height: calc(100% - 100px);
+      float: left;
+  }
+
+  .middle {
+      background-color: /* rgb(194, 194, 214) */rgb(230, 249, 255);
+      width: 60%;
+      box-sizing: border-box;
+      height: calc(100% - 100px);
+      float: left;
+      
+  }
+  .right {
+    background-color: rgb(194, 194, 214);
+    width: 20%;
+    box-sizing: border-box;
+    height: calc(100% - 100px);
+    float: left;
+}
+
+
+/* #F0F0FF; 
+ rgb(230, 249, 255)
+ rgb(194, 194, 214)
+ rgb(51, 102, 204)
+ rgb(117, 117, 163)
+*/
+@media only screen and (max-width: 700px) {
+    .left {
+        width: 30%;
+        height: 300px;
+    }
+    .middle {
+        width: 70%;
+    }
+    .right {
+        clear: right;
+        height: (100% - 400px);
+    }
+  }
