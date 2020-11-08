@@ -91,16 +91,26 @@ header {
  rgb(51, 102, 204)
  rgb(117, 117, 163)
 */
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 992px) {
+    body {
+        position: relative;
+    }
     .left {
+        position: absolute;
+        height: calc(50% - 50px);
         width: 30%;
-        height: 300px;
     }
     .middle {
+        position: absolute;
+        left: 30%;
         width: 70%;
     }
     .right {
-        clear: right;
-        height: (100% - 400px);
+        position: absolute;
+        height: calc(50% - 50px);
+        left: 0px;
+        top: calc(50% + 50px); 
+        width: 30%;
+
     }
-  }
+  } 
